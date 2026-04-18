@@ -37,7 +37,7 @@ class RegisterScreen extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 15),
+              SizedBox(height: 10),
               Container(
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(

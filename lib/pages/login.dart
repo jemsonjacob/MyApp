@@ -7,6 +7,10 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
+    // print(width);
+    // print(height);
+
     return Scaffold(
       body: Container(
         height: double.infinity,
@@ -23,10 +27,8 @@ class LoginScreen extends StatelessWidget {
           ),
         ),
         child: Padding(
-          padding: EdgeInsets.only(top: 150, left: 15, right: 15, bottom: 320),
+          padding: EdgeInsets.only(top: 150, left: 15, right: 15, bottom: 80),
           child: Container(
-            // height: 200,
-            // width: 370,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
               border: Border.all(color: Colors.transparent),
@@ -72,12 +74,12 @@ class LoginScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 15),
                 SizedBox(
-                  width: width > 600 ? 300 : double.infinity,
-                  height: width > 600 ? 150 : 50,
+                  width: double.infinity,
+                  height: width > 600 ? 80 : 50,
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.deepPurple[900],
+                      backgroundColor: Colors.purple[800],
                       elevation: 60,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
@@ -94,6 +96,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 30),
+                Divider(color: Colors.grey.shade600),
                 TextButton(
                   onPressed: () {
                     Navigator.of(context).push(
