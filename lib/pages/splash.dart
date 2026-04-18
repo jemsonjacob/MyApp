@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 2), () {
+    Timer(Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => LoginScreen()),
@@ -45,8 +45,9 @@ class _SplashScreenState extends State<SplashScreen> {
           // mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(height: 250),
-            Icon(Icons.bolt, color: Colors.white60, size: 100),
-            Text('My App', style: TextStyle(color: Colors.white, fontSize: 35)),
+            //Icon(Icons.bolt, color: Colors.white60, size: 100),
+            Image.asset('assets/icon.png', height: 150, color: Colors.white),
+            Text('My App', style: TextStyle(color: Colors.white, fontSize: 40)),
             SizedBox(height: 30),
             CircularProgressIndicator(strokeWidth: 4, color: Colors.white),
           ],

@@ -77,7 +77,7 @@ class LoginScreen extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.deepPurpleAccent.shade400,
+                      backgroundColor: Colors.deepPurple[900],
                       elevation: 60,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
